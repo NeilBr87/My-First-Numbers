@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Gloria+Hallelujah&family=Lacquer&family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Walter+Turncoat&display=swap');
+
 .App {
   text-align: center;
+  font-family: "Sour Gummy", sans-serif;
+
 }
 
 .App-logo {

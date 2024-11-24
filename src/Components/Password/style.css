@@ -1,0 +1,35 @@
+#boaLogo {
+    width: 20vw;
+    position: absolute;
+    top: 2vh;
+    left: 5vw;
+
+}
+
+#passwordBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+#passwordRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2vw;
+}
+
+#passwordField {
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+#submit {
+    height: 45px;
+    border-radius: 10px;
+    background-color: rgb(20, 201, 114);
+}
