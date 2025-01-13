@@ -31,7 +31,7 @@ export default function GameContainer() {
   const [options, setOptions] = useState([]);
   const [message, setMessage] = useState('');
   const [showOverlay, setShowOverlay] = useState(false);
-
+  const [gameOpen, setGameOpen] = useState(false);
   const audioPlayedRef = useRef(false);
 
 useEffect(() => {
@@ -74,6 +74,17 @@ useEffect(() => {
   };
 
   return (
+
+  <section>
+
+    {!gameOpen && <div>
+    <div>
+      <h2>My First Numbers</h2>
+      <button onClick={() => setGameOpen(true)}>Start Game</button>
+    </div>
+    </div>}
+
+    {gameOpen && <div>
     <div className="game-container">
       <h1 id="title">My First Numbers</h1>
       {selectedPerson && (
@@ -108,5 +119,8 @@ useEffect(() => {
         </div>
       )}
     </div>
+    </div>}
+
+  </section>
   );
 }
