@@ -1,28 +1,28 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './style.css';
-import john from './john.png';
-import michele from './michele.png';
-import neil from './neil.png';
-import steph from './steph.png';
-import leo from './leo.png';
-import terence from './terence.png';
-import anna from './anna.png';
-import neilaudio from './neil.m4a';
-import stephaudio from './steph.m4a';
-import johnaudio from './john.m4a';
-import micheleaudio from './michele.m4a';
-import leoaudio from './leo.m4a';
-import terenceaudio from './terence.m4a';
-import annaaudio from './anna.m4a';
+import man from './man.png';
+import woman from './woman.png';
+import boy from './boy.png';
+import girl from './girl.png';
+import olderman from './olderman.png';
+import boy2 from './boy2.png';
+import olderwoman from './olderwoman.png';
+import boyaudio from './boy.mp3';
+import girlaudio from './girl.mp3';
+import manaudio from './Man.mp3';
+import womanaudio from './woman.mp3';
+import oldermanaudio from './olderman.mp3';
+import boy2audio from './boy2.mp3';
+import olderwomanaudio from './olderwoman.mp3';
 
 const people = [
-  { name: 'John', image: john, audio: johnaudio },
-  { name: 'Michele', image: michele, audio: micheleaudio },
-  { name: 'Neil', image: neil, audio: neilaudio },
-  { name: 'Steph', image: steph, audio: stephaudio },
-  { name: 'Leo', image: leo, audio: leoaudio },
-  { name: 'Terence', image: terence, audio: terenceaudio },
-  { name: 'Anna', image: anna, audio: annaaudio },
+  { name: 'man', image: man, audio: manaudio },
+  { name: 'woman', image: woman, audio: womanaudio },
+  { name: 'boy', image: boy, audio: boyaudio },
+  { name: 'girl', image: girl, audio: girlaudio },
+  { name: 'olderman', image: olderman, audio: oldermanaudio },
+  { name: 'boy2', image: boy2, audio: boy2audio },
+  { name: 'olderwoman', image: olderwoman, audio: olderwomanaudio },
 ];
 
 export default function GameContainer() {
@@ -75,7 +75,7 @@ useEffect(() => {
 
   return (
     <div className="game-container">
-      <h1 id="title">Leo's Counting Game!</h1>
+      <h1 id="title">My First Numbers</h1>
       {selectedPerson && (
         <>
           <div className="images-container">

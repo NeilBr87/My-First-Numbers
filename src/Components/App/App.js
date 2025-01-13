@@ -1,10 +1,10 @@
-import Password from '../Password/Index'; 
+import GameContainer from "../GameContainer";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Password />
+      <GameContainer />
     </div>
   );
 }
