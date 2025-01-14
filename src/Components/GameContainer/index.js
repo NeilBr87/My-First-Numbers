@@ -78,9 +78,9 @@ useEffect(() => {
   <section>
 
     {!gameOpen && <div>
-    <div>
-      <h2>My First Numbers</h2>
-      <button onClick={() => setGameOpen(true)}>Start Game</button>
+    <div id="startContainer">
+      <h1 style={{fontSize: "40px"}} >My First Numbers</h1>
+      <button id="startGame" onClick={() => setGameOpen(true)}>Start Game</button>
     </div>
     </div>}
 
