@@ -22,6 +22,42 @@ body {
 
   }
 
+  @media (max-width: 768px) {
+    .profileImg {
+      border-radius: 50%;
+      width: 24vw;
+      height: 24vw;
+      border: 1px solid white;
+  }
+  
+  .images-container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 88vw; /* Set maximum width to 70% of the viewport */
+      margin: 0 auto;
+      justify-content: center;
+      gap: 3vw; /* Space between images */
+  
+    }
+
+    .options-container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 70vw !important;
+      margin: 0 auto;
+      justify-content: center;
+      gap: 6vw; /* Space between images */
+    }
+  .optionKey {
+    width: 13vw !important;
+    margin-bottom: -2vh !important;
+    font-size: 28px !important;
+    padding: 10px !important;
+    border: 1.2px solid white !important;
+  }
+
+  }
+
   .game-container {
     text-align: center;
   }
