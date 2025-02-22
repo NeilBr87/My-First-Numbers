@@ -85,7 +85,7 @@ useEffect(() => {
     </div>}
 
     {gameOpen && <div>
-    <div className="game-container">
+    <div id="outerGameContainer" className="game-container">
       <h1 id="title">My First Numbers</h1>
       {selectedPerson && (
         <>
@@ -99,12 +99,21 @@ useEffect(() => {
       )}
       {message && <p className="message try-again">{message}</p>}
       <div className="options-container">
-        {options.map((option) => (
-          <p className="optionKey" key={option} onClick={() => handleOptionClick(option)}>
-            {option}
-          </p>
-        ))}
-      </div>
+  {options.map((option, index) => {
+    const colors = ["#E6A262", "#79ADDC", "#E05263", "#7DB56C"];
+    const backgroundColor = colors[index % colors.length]; // Cycle through colors
+    return (
+      <p
+        className="optionKey"
+        key={option}
+        onClick={() => handleOptionClick(option)}
+        style={{ backgroundColor, padding: "10px", borderRadius: "5px" }}
+      >
+        {option}
+      </p>
+    );
+  })}
+</div>
 
 
 

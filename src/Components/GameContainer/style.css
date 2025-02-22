@@ -5,11 +5,23 @@ body {
     
 }
 
+#outerGameContainer {
+  background-color: white;
+  height: 80vh;
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 10vh;
+  padding-top: 2vh;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 2px;
+}
+
 .profileImg {
     border-radius: 50%;
-    width: 11vw;
-    height: 11vw;
-    border: 1px solid white;
+    width: 7vw;
+    height: 7vw;
+    border: 2px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .images-container {
@@ -19,7 +31,7 @@ body {
     margin: 0 auto;
     justify-content: center;
     gap: 3vw; /* Space between images */
-
+    
   }
 
   @media (max-width: 768px) {
@@ -102,15 +114,14 @@ body {
   .options-container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 50vw; /* Set maximum width to 70% of the viewport */
+    max-width: 70vw; /* Set maximum width to 70% of the viewport */
     margin: 0 auto;
     justify-content: center;
     gap: 6vw; /* Space between images */
   }
 
   .optionKey {
-    background-color: rgb(224, 46, 46);
-    color: white;
+    color: black;
     font-size: 48px;
     margin-bottom: -10vh;
     font-family: Helvetica;
@@ -120,6 +131,8 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   
   button {
